@@ -79,11 +79,7 @@ thor2 should be at:
 
 **1)** Go to the thor2 folder and open CMD in it.
 
-**2)** Turn your phone off.
-
 **3)** Run this command: ```thor2 -mode rnd -bootflashapp```
-
-**4)** Plug your phone into your PC.
 
 **5)** Flash your phone's FFU file (download from <a href="https://lumiafirmware.com/">LumiaFirmware</a>) with:
 
