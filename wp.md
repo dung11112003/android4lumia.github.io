@@ -46,6 +46,7 @@ Change **partition** with one of these (**flash them in this order!**):
 
 * TZ
 * SSD
+* DPP
 * RPM
 * WINSECAPP
 * MODEM_FSG
@@ -64,7 +65,7 @@ Change **partition** with one of these (**flash them in this order!**):
 
 Phone will now show smiley of death, that is normal.
 
-At this point, you can use Windows Device Recovery Tool to flash a clean Windows Phone or reflash the one from the backup using thor2.
+At this point, you can use Windows Device Recovery Tool or Windows Phone Internals to flash a clean FFU or reflash the one from the backup using thor2.
 
 ## How to flash Windows Phone FFU with thor2
 ___________________
@@ -78,12 +79,16 @@ thor2 should be at:
 
 **1)** Go to the thor2 folder and open CMD in it.
 
-**2)** Run this command: ```thor2 -mode rnd -bootflashapp```
+**2)** Turn your phone off.
 
-**3)** Flash your phone's FFU file (download from <a href="https://lumiafirmware.com/">LumiaFirmware</a>) with:
+**3)** Run this command: ```thor2 -mode rnd -bootflashapp```
+
+**4)** Plug your phone into your PC.
+
+**4)** Flash your phone's FFU file (download from <a href="https://lumiafirmware.com/">LumiaFirmware</a>) with:
 
 ```thor2 -mode uefiflash -ffufile <Path-to-FFU> -do_full_nvi_update -do_factory_reset```
 
-**4)** Reboot your phone with ```thor2 -mode rnd -bootnormalmode```
+**5)** Reboot your phone with ```thor2 -mode rnd -bootnormalmode```
 
 Done! Windows Phone 8 should boot.
