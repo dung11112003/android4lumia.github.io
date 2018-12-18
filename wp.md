@@ -79,12 +79,12 @@ thor2 should be at:
 
 **1)** Go to the thor2 folder and open CMD in it.
 
-**3)** Run this command: ```thor2 -mode rnd -bootflashapp```
+**2)** Run this command: ```thor2 -mode rnd -bootflashapp```
 
-**5)** Flash your phone's FFU file (download from <a href="https://lumiafirmware.com/">LumiaFirmware</a>) with:
+**3)** Flash your phone's FFU file (download from <a href="https://lumiafirmware.com/">LumiaFirmware</a>) with:
 
 ```thor2 -mode uefiflash -ffufile <Path-to-FFU> -do_full_nvi_update -do_factory_reset```
 
-**6)** Reboot your phone with ```thor2 -mode rnd -bootnormalmode```
+**4)** Reboot your phone with ```thor2 -mode rnd -bootnormalmode```
 
 Done! Windows Phone 8 should boot.
